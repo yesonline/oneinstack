@@ -501,7 +501,7 @@ What Are You Doing?
     done
 
     if [[ "$(${web_install_dir}/sbin/nginx -V 2>&1 | grep -Eo 'with-http_v2_module')" = 'with-http_v2_module' ]]; then
-      LISTENOPT="443 ssl http2"
+      LISTENOPT="443 ssl"
     else
       LISTENOPT="443 ssl spdy"
     fi
